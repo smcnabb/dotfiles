@@ -1,3 +1,7 @@
+if [ -f /opt/boxen/env.sh ]; then
+  source /opt/boxen/env.sh
+fi
+
 alias gitreset='git reset --hard HEAD; git clean -df; git pull'
 
 function bash_git_branch
