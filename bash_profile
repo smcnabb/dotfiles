@@ -6,4 +6,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+if [ -f /usr/share/git-core/git-completion.bash ]; then
+  . /usr/share/git-core/git-completion.bash
+fi
+
 export PATH="./node_modules/.bin:$PATH"
