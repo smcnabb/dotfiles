@@ -3,6 +3,7 @@ if [ -f /opt/boxen/env.sh ]; then
 fi
 
 alias gitreset='git reset --hard HEAD; git clean -df; git pull'
+alias wfix='sudo ifconfig en0 down ; sudo ifconfig en0 up'
 
 function bash_git_branch
 {
