@@ -1,9 +1,6 @@
-if [ -f /opt/boxen/env.sh ]; then
-  source /opt/boxen/env.sh
-fi
-
 alias gitreset='git reset --hard HEAD; git clean -df; git pull'
-alias wfix='sudo ifconfig en0 down ; sudo ifconfig en0 up'
+alias wfix='sudo ifconfig en1 down ; sudo ifconfig en1 up'
+alias json='python -mjson.tool'
 
 function bash_git_branch
 {

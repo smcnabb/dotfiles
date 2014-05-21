@@ -10,6 +10,6 @@ if [ -f /usr/share/git-core/git-completion.bash ]; then
   . /usr/share/git-core/git-completion.bash
 fi
 
-export PATH="./node_modules/.bin:$PATH"
+export PATH="./node_modules/.bin:~/bin/:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)

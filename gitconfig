@@ -1,0 +1,15 @@
+[core]
+autocrlf = input
+
+[alias]
+co = checkout
+s = status
+ci = commit
+di = diff
+
+[user]
+name = Stephen McNabb
+email = me@stephenmcnabb.com
+
+[color]
+ui = true

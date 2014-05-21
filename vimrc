@@ -10,4 +10,4 @@ set noshowmatch
 set scrolljump=5
 set scrolloff=3
 let loaded_matchparen = 1
-syntax on
+syntax off
