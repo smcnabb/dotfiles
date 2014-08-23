@@ -10,6 +10,10 @@ if [ -f /usr/share/git-core/git-completion.bash ]; then
   . /usr/share/git-core/git-completion.bash
 fi
 
-export PATH="./node_modules/.bin:~/bin/:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+source $(brew --prefix nvm)/nvm.sh
+
+export PATH="./node_modules/.bin:/usr/local/bin:$PATH:~/bin"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
