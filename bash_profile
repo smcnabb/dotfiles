@@ -16,4 +16,7 @@ source $(brew --prefix nvm)/nvm.sh
 
 export PATH="./node_modules/.bin:/usr/local/bin:$PATH:~/bin"
 
+export GOPATH=$HOME/Source/Go
+export PATH=$PATH:$GOPATH/bin
+
 export JAVA_HOME=$(/usr/libexec/java_home)
