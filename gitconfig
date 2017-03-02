@@ -13,3 +13,6 @@ email = me@stephenmcnabb.com
 
 [color]
 ui = true
+
+[credential]
+helper = osxkeychain

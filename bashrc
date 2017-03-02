@@ -2,6 +2,9 @@ alias gitreset='git reset --hard HEAD; git clean -df; git pull'
 alias wfix='sudo ifconfig en1 down ; sudo ifconfig en1 up'
 alias json='python -mjson.tool'
 alias vi='vim'
+alias diff='ksdiff'
+alias ll='ls -arlth'
+alias tf='tail -f'
 
 function bash_git_branch
 {

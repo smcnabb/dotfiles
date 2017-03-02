@@ -12,11 +12,18 @@ fi
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-source $(brew --prefix nvm)/nvm.sh
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
 export PATH="./node_modules/.bin:/usr/local/bin:$PATH:~/bin"
 
-export GOPATH=$HOME/Source/Go
+export GOPATH=$HOME/GoLang
 export PATH=$PATH:$GOPATH/bin
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+export PATH="$HOME/.jenv/bin:$PATH"
