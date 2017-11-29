@@ -24,9 +24,16 @@ $ brew doctor
 $ brew install git
 $ brew install bash-completion
 $ brew install cask
+$ brew install vim
 $ brew install wget
+$ brew install tree
+$ brew install calc
+$ brew install dos2unix
+$ brew install htop
+$ brew install speedtest-cli
 $ brew cask install 1password
-$ brew cask search iterm
+$ brew cask install gpg-suite
+$ brew cask install iterm2
 $ brew cask install sublime-text
 $ brew cask install slack
 $ brew cask install appcleaner
@@ -81,6 +88,8 @@ $ ln -s ~/Source/dotfiles/vimrc .vimrc
 
 ### Install dev apps
 ```bash
+$ brew cask install virtualbox
+$ brew cask install vagrant
 $ brew install ansible
 $ brew install mysql
 $ brew install memcached

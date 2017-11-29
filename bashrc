@@ -2,6 +2,7 @@ alias gitreset='git reset --hard HEAD; git clean -df; git pull'
 alias diff='ksdiff'
 alias ll='ls -arlth'
 alias tf='tail -f'
+alias vi='vim'
 alias ldb='sudo /usr/libexec/locate.updatedb'
 
 function bash_git_branch
