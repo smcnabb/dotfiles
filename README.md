@@ -1,25 +1,41 @@
 
 ## New MacBook
 
+### Copy .ssh folder
+```bash
+$ chmod 700 ~/.ssh
+```
+
 ### Setup iCloud account
 
 ### Install Google Chrome
 - Sign in with Chrome
 - Setup Google accounts
 
-### Install iTerm2
-- Make default term
-- Install Shell integration
-- Enable update to beta versions
-- Add Homebrew color preset
-- Font to 18pt Andale Mono
-- Non-ASCII font to 12pt Monaco
-- Window to 100x30
-- Silence bell
-- Turn off terminal show mark indicators (scroll down)
+### Install Homebrew
+```bash
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew update
+$ brew doctor
+```
 
-### Install 1Password
-
+### Install apps
+```bash
+$ brew install git
+$ brew install bash-completion
+$ brew install cask
+$ brew install wget
+$ brew cask install 1password
+$ brew cask search iterm
+$ brew cask install sublime-text
+$ brew cask install slack
+$ brew cask install appcleaner
+$ brew cask install google-backup-and-sync
+$ brew cask install dropbox
+$ brew cask install rowanj-gitx
+$ brew cask install paw
+$ brew cask install whatsapp
+```
 ### Set Mac preferences
 ```bash
 $ defaults write -g ApplePressAndHoldEnabled -bool false
@@ -32,19 +48,6 @@ $ defaults write -g ApplePressAndHoldEnabled -bool false
 - Tweak Keyboard settings (Key repeat and delay)
 - Tweak Trackpad settings (Secondary click right corner, natural scroll off)
 - Tweak Touch ID settings (Fingerprint setup)
-
-### Copy .ssh folder
-```bash
-$ chmod 700 ~/.ssh
-```
-
-### Install Homebrew and Git
-```bash
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew update
-$ brew install git
-$ brew install bash-completion
-```
 
 ### Get dotfiles
 ```bash
@@ -61,19 +64,23 @@ $ ln -s ~/Source/dotfiles/rdebugrc .rdebugrc
 $ ln -s ~/Source/dotfiles/vimrc .vimrc
 ```
 
-### Install Sublime Text 3
+### Configure iTerm2
+- Make default term
+- Install Shell integration
+- Add Homebrew color preset
+- Font to 18pt Andale Mono
+- Non-ASCII font to 12pt Monaco
+- Window to 100x30
+- Silence bell
+- Turn off show mark indicators (scroll down)
+
+### Configure Sublime Text 3
 - Add user preferences
+- Install Package Control
 - Install packages: GenerateUUID, Markdown Preview, Pretty JSON
-```bash
-$ cp /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/
-```
 
-### Install Slack from App Store
-
-### Install other apps
+### Install dev apps
 ```bash
-$ brew install wget
-$ brew install rbenv
 $ brew install ansible
 $ brew install mysql
 $ brew install memcached
@@ -89,6 +96,31 @@ $ brew services start mongodb
 $ brew services start redis
 ```
 
+### Install Ruby
+```bash
+$ brew install rbenv
+$ rbenv install -l
+$ rbenv install 2.0.0-p353
+$ ruby install 2.4.2
+$ rbenv global 2.4.2
+```
+
+### Install Node
+```bash
+brew install nodenv
+$ nodenv install -l
+$ nodenv install 9.2.0
+$ nodenv global 9.2.0
+```
+
+### Install Python
+```bash
+brew install pyenv
+$ pyenv install -l
+$ pyenv install 3.6.3
+$ pyenv global 3.6.3
+```
+
 ### Install Java
 ```bash
 $ brew install jenv
@@ -98,21 +130,13 @@ $ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
 $ jenv global 1.8
 ```
 
-### Install Google Drive
+### Link notes
 ```bash
-$ cd ~
 $ ln -s ~/Google\ Drive/Notes Notes
 ```
 
-### Install App Cleaner
-### Install Dropbox
-### Install GitX
-- https://rowanj.github.io/gitx
-- Enable terminal usage
-
 ### Install from App Store
 - Kaleidoscope
-- Paw
 - Omnigraffle
 - iMovie
 
