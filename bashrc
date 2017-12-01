@@ -4,6 +4,8 @@ alias ll='ls -arlth'
 alias tf='tail -f'
 alias vi='vim'
 alias ldb='sudo /usr/libexec/locate.updatedb'
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias genpwd='LC_ALL=C tr -dc "[:alpha:][:alnum:]" < /dev/urandom | head -c 20'
 
 function bash_git_branch
 {

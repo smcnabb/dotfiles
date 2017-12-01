@@ -8,22 +8,21 @@ $ chmod 700 ~/.ssh
 
 ### Setup iCloud account
 
-### Install Google Chrome
-- Sign in with Chrome
-- Setup Google accounts
-
 ### Install Homebrew
 ```bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew update
+$ brew install cask
+$ brew tap buo/cask-upgrade
+$ brew install mas
 $ brew doctor
 ```
 
 ### Install apps
 ```bash
+$ brew cask install google-chrome
 $ brew install git
 $ brew install bash-completion
-$ brew install cask
 $ brew install vim
 $ brew install wget
 $ brew install tree
@@ -31,6 +30,7 @@ $ brew install calc
 $ brew install dos2unix
 $ brew install htop
 $ brew install speedtest-cli
+$ brew install fortune
 $ brew cask install 1password
 $ brew cask install gpg-suite
 $ brew cask install iterm2
@@ -40,21 +40,36 @@ $ brew cask install appcleaner
 $ brew cask install google-backup-and-sync
 $ brew cask install dropbox
 $ brew cask install rowanj-gitx
+$ brew cask install viscosity
 $ brew cask install paw
+$ brew cask install firefox
+$ brew cask install alfred
 $ brew cask install whatsapp
 ```
+
+### Link notes
+```bash
+$ ln -s ~/Google\ Drive/Notes Notes
+```
+
 ### Set Mac preferences
 ```bash
-$ defaults write -g ApplePressAndHoldEnabled -bool false
+$ defaults write -g ApplePressAndHoldEnabled -bool false # Disable press and hold, enabling key repeat
+$ defaults write -g AppleShowScrollBars -string "Always" # Always show scrollbars
+$ defaults write -g NSNavPanelExpandedStateForSaveMode -bool true # Full save dialog
+$ defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true # Full save dialog
+$ defaults write -g InitialKeyRepeat -int 15 # Delay until repeat
+$ defaults write -g KeyRepeat -int 2 # Key repeat
+$ defaults write com.apple.screensaver askForPassword -int 1 # Always ask for password after screensaver
+$ defaults write com.apple.screensaver askForPasswordDelay -int 0 # No delay before asking for password
 ```
 - Tweak Desktop & Screen Saver settings (Background color, start after, hot corner)
-- Tweak Security & Privacy settings (Require password)
 - Tweak Notifications settings (Messages preview)
 - Tweak Displays settings (Scaling)
 - Tweak Energy Saver settings (Display off setting for both)
-- Tweak Keyboard settings (Key repeat and delay)
 - Tweak Trackpad settings (Secondary click right corner, natural scroll off)
 - Tweak Touch ID settings (Fingerprint setup)
+- Change .txt files to open with Sublime Text
 
 ### Get dotfiles
 ```bash
@@ -71,7 +86,7 @@ $ ln -s ~/Source/dotfiles/rdebugrc .rdebugrc
 $ ln -s ~/Source/dotfiles/vimrc .vimrc
 ```
 
-### Configure iTerm2
+### Configure iTerm
 - Make default term
 - Install Shell integration
 - Add Homebrew color preset
@@ -139,15 +154,16 @@ $ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
 $ jenv global 1.8
 ```
 
-### Link notes
-```bash
-$ ln -s ~/Google\ Drive/Notes Notes
-```
-
 ### Install from App Store
-- Kaleidoscope
-- Omnigraffle
-- iMovie
+```bash
+$ mas install 587512244 # Kaleidoscope
+$ brew cask install ksdiff # Kaleidoscope command-line integration
+$ mas install 711830901 # OmniGraffle 6
+$ mas install 408981434 # iMovie
+$ mas install 409183694 # Keynote
+$ mas install 409203825 # Numbers
+$ mas install 409201541 # Pages
+```
 
 ### Update locate database
 ```bash
