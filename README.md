@@ -18,19 +18,42 @@ $ brew install mas
 $ brew doctor
 ```
 
+### Install updated core command line tools
+$ brew install bash
+$ brew install gzip
+$ brew install less
+$ brew install openssh
+$ brew install screen
+$ brew install unzip
+$ brew install vim --with-override-system-vi
+$ brew install zip
+
+### Install other useful command line tools
+$ brew install bash-completion
+$ brew install calc
+$ brew install dos2unix
+$ brew install ffmpeg
+$ brew install git
+$ brew install gradle
+$ brew install htop
+$ brew install speedtest-cli
+$ brew install tree
+$ brew install youtube-dl
+$ brew install wget
+
+### Make things more like Linux
+$ brew install coreutils
+$ brew install diffutils
+$ brew install findutils --with-default-names
+$ brew install gawk
+$ brew install gnu-sed --with-default-names
+$ brew install gnu-tar --with-default-names
+$ brew install gnu-which --with-default-names
+$ brew install grep --with-default-names
+
 ### Install apps
 ```bash
 $ brew cask install google-chrome
-$ brew install git
-$ brew install bash-completion
-$ brew install vim
-$ brew install wget
-$ brew install tree
-$ brew install calc
-$ brew install dos2unix
-$ brew install htop
-$ brew install speedtest-cli
-$ brew install fortune
 $ brew cask install 1password
 $ brew cask install gpg-suite
 $ brew cask install iterm2
@@ -43,6 +66,8 @@ $ brew cask install rowanj-gitx
 $ brew cask install viscosity
 $ brew cask install paw
 $ brew cask install firefox
+$ brew cask install discord
+$ brew cask install vlc
 $ brew cask install alfred
 $ brew cask install whatsapp
 ```

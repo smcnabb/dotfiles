@@ -11,3 +11,9 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 export PATH="$HOME/.jenv/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+export PATH="/usr/local/opt/zip/bin:$PATH"
+export PATH="/usr/local/opt/unzip/bin:$PATH"
