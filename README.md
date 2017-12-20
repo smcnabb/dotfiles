@@ -19,6 +19,7 @@ $ brew doctor
 ```
 
 ### Install updated core command line tools
+```bash
 $ brew install bash
 $ brew install gzip
 $ brew install less
@@ -27,8 +28,10 @@ $ brew install screen
 $ brew install unzip
 $ brew install vim --with-override-system-vi
 $ brew install zip
+```
 
 ### Install other useful command line tools
+```bash
 $ brew install bash-completion
 $ brew install calc
 $ brew install dos2unix
@@ -40,8 +43,10 @@ $ brew install speedtest-cli
 $ brew install tree
 $ brew install youtube-dl
 $ brew install wget
+```
 
 ### Make things more like Linux
+```bash
 $ brew install coreutils
 $ brew install diffutils
 $ brew install findutils --with-default-names
@@ -50,6 +55,7 @@ $ brew install gnu-sed --with-default-names
 $ brew install gnu-tar --with-default-names
 $ brew install gnu-which --with-default-names
 $ brew install grep --with-default-names
+```
 
 ### Install apps
 ```bash
