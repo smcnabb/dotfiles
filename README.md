@@ -37,7 +37,6 @@ $ brew install calc
 $ brew install dos2unix
 $ brew install ffmpeg
 $ brew install git
-$ brew install gradle
 $ brew install htop
 $ brew install speedtest-cli
 $ brew install tree
@@ -112,6 +111,7 @@ $ cd ~
 $ ln -s ~/Source/dotfiles/bash_profile .bash_profile
 $ ln -s ~/Source/dotfiles/bashrc .bashrc
 $ ln -s ~/Source/dotfiles/gitconfig .gitconfig
+$ ln -s ~/Source/dotfiles/gitignore_global .gitignore_global
 $ ln -s ~/Source/dotfiles/inputrc .inputrc
 $ ln -s ~/Source/dotfiles/rdebugrc .rdebugrc
 $ ln -s ~/Source/dotfiles/vimrc .vimrc
@@ -180,6 +180,7 @@ $ pyenv global 3.6.3
 ```bash
 $ brew install jenv
 $ brew install maven
+$ brew install gradle
 $ jenv add /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
 $ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
 $ jenv global 1.8

@@ -1,5 +1,6 @@
 [core]
 autocrlf = input
+excludesfile = /Users/smcnabb/.gitignore_global
 
 [alias]
 co = checkout
