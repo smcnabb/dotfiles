@@ -1,5 +1,5 @@
 
-## New MacBook
+## New MacBook Setup
 
 ### Copy .ssh folder
 ```bash
@@ -38,7 +38,10 @@ $ brew install dos2unix
 $ brew install ffmpeg
 $ brew install git
 $ brew install htop
+$ brew install peco
 $ brew install speedtest-cli
+$ brew install tig
+$ brew install tldr
 $ brew install tree
 $ brew install youtube-dl
 $ brew install wget
@@ -68,9 +71,11 @@ $ brew cask install appcleaner
 $ brew cask install google-backup-and-sync
 $ brew cask install dropbox
 $ brew cask install rowanj-gitx
+$ brew cask install sequel-pro
 $ brew cask install viscosity
 $ brew cask install paw
 $ brew cask install firefox
+$ brew cask install steam
 $ brew cask install discord
 $ brew cask install vlc
 $ brew cask install alfred
@@ -79,7 +84,7 @@ $ brew cask install whatsapp
 
 ### Link notes
 ```bash
-$ ln -s ~/Google\ Drive/Notes Notes
+$ ln -s ~/Google\ Drive/Notes ~/Notes
 ```
 
 ### Set Mac preferences
@@ -108,13 +113,15 @@ $ mkdir Source
 $ cd Source
 $ git clone git@github.com:smcnabb/dotfiles.git
 $ cd ~
-$ ln -s ~/Source/dotfiles/bash_profile .bash_profile
-$ ln -s ~/Source/dotfiles/bashrc .bashrc
-$ ln -s ~/Source/dotfiles/gitconfig .gitconfig
-$ ln -s ~/Source/dotfiles/gitignore_global .gitignore_global
-$ ln -s ~/Source/dotfiles/inputrc .inputrc
-$ ln -s ~/Source/dotfiles/rdebugrc .rdebugrc
-$ ln -s ~/Source/dotfiles/vimrc .vimrc
+$ mkdir bin
+$ ln -s ~/Source/dotfiles/bash_profile ~/.bash_profile
+$ ln -s ~/Source/dotfiles/bashrc ~/.bashrc
+$ ln -s ~/Source/dotfiles/gitconfig ~/.gitconfig
+$ ln -s ~/Source/dotfiles/gitignore_global ~/.gitignore_global
+$ ln -s ~/Source/dotfiles/hbdaily.sh ~/bin/hbdaily.sh
+$ ln -s ~/Source/dotfiles/inputrc ~/.inputrc
+$ ln -s ~/Source/dotfiles/rdebugrc ~/.rdebugrc
+$ ln -s ~/Source/dotfiles/vimrc ~/.vimrc
 ```
 
 ### Configure iTerm

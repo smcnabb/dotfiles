@@ -1,6 +1,8 @@
 
 [ -f ~/.bashrc ] && . ~/.bashrc
 
+export PATH="$HOME/bin:$PATH"
+
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -17,3 +19,5 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 export PATH="/usr/local/opt/zip/bin:$PATH"
 export PATH="/usr/local/opt/unzip/bin:$PATH"
+
+eval $(thefuck --alias)
