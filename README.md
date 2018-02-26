@@ -82,7 +82,7 @@ $ brew cask install alfred
 $ brew cask install whatsapp
 ```
 
-### Link notes
+### Symlinks
 ```bash
 $ ln -s ~/Google\ Drive/Notes ~/Notes
 ```
@@ -122,6 +122,7 @@ $ ln -s ~/Source/dotfiles/hbdaily.sh ~/bin/hbdaily.sh
 $ ln -s ~/Source/dotfiles/inputrc ~/.inputrc
 $ ln -s ~/Source/dotfiles/rdebugrc ~/.rdebugrc
 $ ln -s ~/Source/dotfiles/vimrc ~/.vimrc
+$ ln -s ~/Source/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 ```
 
 ### Configure iTerm
