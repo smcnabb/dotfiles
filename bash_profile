@@ -20,4 +20,6 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export PATH="/usr/local/opt/zip/bin:$PATH"
 export PATH="/usr/local/opt/unzip/bin:$PATH"
 
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 eval $(thefuck --alias)

@@ -21,6 +21,7 @@ $ brew doctor
 ### Install updated core command line tools
 ```bash
 $ brew install bash
+$ brew install curl && brew link curl --force
 $ brew install gzip
 $ brew install less
 $ brew install openssh
@@ -38,11 +39,14 @@ $ brew install dos2unix
 $ brew install ffmpeg
 $ brew install git
 $ brew install htop
+$ brew install httpie
 $ brew install peco
+$ brew install rename
 $ brew install speedtest-cli
 $ brew install tig
 $ brew install tldr
 $ brew install tree
+$ brew install unrar
 $ brew install youtube-dl
 $ brew install wget
 ```
@@ -61,24 +65,29 @@ $ brew install grep --with-default-names
 
 ### Install apps
 ```bash
-$ brew cask install google-chrome
 $ brew cask install 1password
+$ brew cask install android-studio
+$ brew cask install appcleaner
+$ brew cask install discord
+$ brew cask install diskwave
+$ brew cask install dropbox
+$ brew cask install box-drive
+$ brew cask install firefox
+$ brew cask install gimp
+$ brew cask install google-backup-and-sync
+$ brew cask install google-chrome-beta
 $ brew cask install gpg-suite
 $ brew cask install iterm2
-$ brew cask install sublime-text
-$ brew cask install slack
-$ brew cask install appcleaner
-$ brew cask install google-backup-and-sync
-$ brew cask install dropbox
+$ brew cask install paw
+$ brew cask install postman
 $ brew cask install rowanj-gitx
 $ brew cask install sequel-pro
-$ brew cask install viscosity
-$ brew cask install paw
-$ brew cask install firefox
+$ brew cask install slack
 $ brew cask install steam
-$ brew cask install discord
+$ brew cask install sublime-text
+$ brew cask install twitch
+$ brew cask install viscosity
 $ brew cask install vlc
-$ brew cask install alfred
 $ brew cask install whatsapp
 ```
 
@@ -95,8 +104,7 @@ $ defaults write -g NSNavPanelExpandedStateForSaveMode -bool true # Full save di
 $ defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true # Full save dialog
 $ defaults write -g InitialKeyRepeat -int 15 # Delay until repeat
 $ defaults write -g KeyRepeat -int 2 # Key repeat
-$ defaults write com.apple.screensaver askForPassword -int 1 # Always ask for password after screensaver
-$ defaults write com.apple.screensaver askForPasswordDelay -int 0 # No delay before asking for password
+$ defaults write com.apple.screensaver askForPassword -int 1 # Always ask for password after screensaver $ defaults write com.apple.screensaver askForPasswordDelay -int 0 # No delay before asking for password
 ```
 - Tweak Desktop & Screen Saver settings (Background color, start after, hot corner)
 - Tweak Notifications settings (Messages preview)
@@ -138,13 +146,22 @@ $ ln -s ~/Source/dotfiles/Preferences.sublime-settings ~/Library/Application\ Su
 ### Configure Sublime Text 3
 - Add user preferences
 - Install Package Control
-- Install packages: GenerateUUID, Markdown Preview, Pretty JSON
+- Install packages:
+  - ColorPicker
+  - GenerateUUIDHexViewer
+  - GitGutter
+  - Markdown Preview
+  - Pretty JSON
+  - SublimeGit
 
 ### Install dev apps
 ```bash
 $ brew cask install virtualbox
 $ brew cask install vagrant
+$ brew cask install docker
 $ brew install ansible
+$ brew install awscli
+$ brew install kotlin
 $ brew install mysql
 $ brew install memcached
 $ brew install mongodb
@@ -153,9 +170,9 @@ $ brew install redis
 
 ### Start services
 ```bash
-$ brew services start mysql
 $ brew services start memcached
 $ brew services start mongodb
+$ brew services start mysql
 $ brew services start redis
 ```
 
@@ -163,9 +180,9 @@ $ brew services start redis
 ```bash
 $ brew install rbenv
 $ rbenv install -l
-$ rbenv install 2.0.0-p353
-$ ruby install 2.4.2
-$ rbenv global 2.4.2
+$ rbenv install 2.4.2
+$ rbenv install 2.5.1
+$ rbenv global 2.5.1
 ```
 
 ### Install Node
@@ -190,8 +207,8 @@ $ brew install jenv
 $ brew install maven
 $ brew install gradle
 $ jenv add /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-$ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
-$ jenv global 1.8
+$ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home
+$ jenv global 1.8.0.172
 ```
 
 ### Install from App Store
@@ -203,6 +220,7 @@ $ mas install 408981434 # iMovie
 $ mas install 409183694 # Keynote
 $ mas install 409203825 # Numbers
 $ mas install 409201541 # Pages
+$ mas install 1055273043 # PDF Expert
 ```
 
 ### Update locate database

@@ -3,11 +3,12 @@
 # Update Homebrew and apps
 brew update
 brew upgrade
-brew cleanup -s
 
 # Update Cask apps
-brew cu --all
-brew cask cleanup
+brew cu --all -q
+
+# Cleanup
+brew cleanup -s
 
 # Upgrade App Store apps
 mas upgrade
