@@ -79,6 +79,7 @@ $ brew cask install google-chrome-beta
 $ brew cask install gpg-suite
 $ brew cask install iterm2
 $ brew cask install paw
+$ brew cask install plex-media-player
 $ brew cask install postman
 $ brew cask install rowanj-gitx
 $ brew cask install sequel-pro
@@ -181,24 +182,24 @@ $ brew services start redis
 $ brew install rbenv
 $ rbenv install -l
 $ rbenv install 2.4.2
-$ rbenv install 2.5.1
-$ rbenv global 2.5.1
+$ rbenv install 2.5.3
+$ rbenv global 2.5.3
 ```
 
 ### Install Node
 ```bash
 brew install nodenv
 $ nodenv install -l
-$ nodenv install 9.2.0
-$ nodenv global 9.2.0
+$ nodenv install 11.3.0
+$ nodenv global 11.3.0
 ```
 
 ### Install Python
 ```bash
 brew install pyenv
 $ pyenv install -l
-$ pyenv install 3.6.3
-$ pyenv global 3.6.3
+$ pyenv install 3.7.1
+$ pyenv global 3.7.1
 ```
 
 ### Install Java
@@ -207,8 +208,14 @@ $ brew install jenv
 $ brew install maven
 $ brew install gradle
 $ jenv add /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-$ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home
-$ jenv global 1.8.0.172
+$ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home
+$ jenv add /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
+$ jenv add /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home
+$ jenv add /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home
+$ jenv enable-plugin export
+$ jenv enable-plugin maven
+$ jenv enable-plugin gradle
+$ jenv global 11.0
 ```
 
 ### Install from App Store
