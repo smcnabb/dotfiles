@@ -40,6 +40,8 @@ $ brew install ffmpeg
 $ brew install git
 $ brew install htop
 $ brew install httpie
+$ brew install lftp
+$ brew install mkvtoolnix
 $ brew install peco
 $ brew install rename
 $ brew install speedtest-cli
@@ -68,6 +70,7 @@ $ brew install grep --with-default-names
 $ brew cask install 1password
 $ brew cask install android-studio
 $ brew cask install appcleaner
+$ brew cask install authy
 $ brew cask install discord
 $ brew cask install diskwave
 $ brew cask install dropbox
@@ -77,6 +80,7 @@ $ brew cask install gimp
 $ brew cask install google-backup-and-sync
 $ brew cask install google-chrome-beta
 $ brew cask install gpg-suite
+$ brew cask install iina
 $ brew cask install iterm2
 $ brew cask install paw
 $ brew cask install plex-media-player
@@ -228,6 +232,7 @@ $ mas install 409183694 # Keynote
 $ mas install 409203825 # Numbers
 $ mas install 409201541 # Pages
 $ mas install 1055273043 # PDF Expert
+$ mas install 880001334 # Reeder 3
 ```
 
 ### Update locate database
