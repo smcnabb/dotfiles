@@ -80,8 +80,10 @@ $ brew cask install gimp
 $ brew cask install google-backup-and-sync
 $ brew cask install google-chrome-beta
 $ brew cask install gpg-suite
+$ brew cask install handbrake
 $ brew cask install iina
 $ brew cask install iterm2
+$ brew cask install malwarebytes
 $ brew cask install paw
 $ brew cask install plex-media-player
 $ brew cask install postman
@@ -153,7 +155,8 @@ $ ln -s ~/Source/dotfiles/Preferences.sublime-settings ~/Library/Application\ Su
 - Install Package Control
 - Install packages:
   - ColorPicker
-  - GenerateUUIDHexViewer
+  - GenerateUUID
+  - HexViewer
   - GitGutter
   - Markdown Preview
   - Pretty JSON

@@ -2,6 +2,7 @@
 [ -f ~/.bashrc ] && . ~/.bashrc
 
 export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
