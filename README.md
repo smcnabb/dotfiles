@@ -26,8 +26,9 @@ $ brew install gzip
 $ brew install less
 $ brew install openssh
 $ brew install screen
+$ brew install telnet
 $ brew install unzip
-$ brew install vim --with-override-system-vi
+$ brew install vim
 $ brew install zip
 ```
 
@@ -57,12 +58,12 @@ $ brew install wget
 ```bash
 $ brew install coreutils
 $ brew install diffutils
-$ brew install findutils --with-default-names
+$ brew install findutils
 $ brew install gawk
-$ brew install gnu-sed --with-default-names
-$ brew install gnu-tar --with-default-names
-$ brew install gnu-which --with-default-names
-$ brew install grep --with-default-names
+$ brew install gnu-sed
+$ brew install gnu-tar
+$ brew install gnu-which
+$ brew install grep
 ```
 
 ### Install apps
@@ -236,6 +237,9 @@ $ mas install 409203825 # Numbers
 $ mas install 409201541 # Pages
 $ mas install 1055273043 # PDF Expert
 $ mas install 880001334 # Reeder 3
+$ mas install 410628904 # Wunderlist
+$ mas install 1295203466 # Microsoft Remote Desktop 10
+$ mas install 1153157709 # Speedtest by Ookla
 ```
 
 ### Update locate database
