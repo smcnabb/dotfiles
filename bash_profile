@@ -4,7 +4,7 @@
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
@@ -18,6 +18,7 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
+export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="/usr/local/opt/zip/bin:$PATH"
 export PATH="/usr/local/opt/unzip/bin:$PATH"
 export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
