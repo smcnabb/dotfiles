@@ -216,7 +216,7 @@ $ brew install jenv
 $ brew install maven
 $ brew install gradle
 $ jenv add /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-$ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home
+$ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home
 $ jenv add /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
 $ jenv add /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home
 $ jenv add /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home
