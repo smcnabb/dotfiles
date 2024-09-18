@@ -14,7 +14,6 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew update
 $ brew install cask
 $ brew tap buo/cask-upgrade
-$ brew install mas
 $ brew doctor
 ```
 
@@ -132,13 +131,15 @@ $ cd ~
 $ mkdir bin
 $ ln -s ~/Source/dotfiles/bash_profile ~/.bash_profile
 $ ln -s ~/Source/dotfiles/bashrc ~/.bashrc
+$ ln -s ~/Source/dotfiles/zprofile ~/.zprofile
+$ ln -s ~/Source/dotfiles/zshrc ~/.zshrc
 $ ln -s ~/Source/dotfiles/gitconfig ~/.gitconfig
 $ ln -s ~/Source/dotfiles/gitignore_global ~/.gitignore_global
 $ ln -s ~/Source/dotfiles/hbdaily.sh ~/bin/hbdaily.sh
 $ ln -s ~/Source/dotfiles/inputrc ~/.inputrc
 $ ln -s ~/Source/dotfiles/rdebugrc ~/.rdebugrc
 $ ln -s ~/Source/dotfiles/vimrc ~/.vimrc
-$ ln -s ~/Source/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+$ ln -s ~/Source/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text/Packages/User/Preferences.sublime-settings
 ```
 
 ### Configure iTerm

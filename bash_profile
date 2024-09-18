@@ -2,14 +2,16 @@
 [ -f ~/.bashrc ] && . ~/.bashrc
 
 export PATH="$HOME/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init --path)"; fi
 
 export PATH="$HOME/.jenv/bin:$PATH"
 
@@ -26,7 +28,3 @@ export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/gnu-which/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
-eval $(thefuck --alias)
