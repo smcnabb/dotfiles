@@ -6,7 +6,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi

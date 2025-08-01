@@ -13,5 +13,7 @@ export PS1="\[\033[0;36m\][\t] \[\033[1;34m\]\u\[\033[00m\]\
 \[\033[0;32m\] \$\[\033[00m\] "
 
 export EDITOR=vim
-
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+HISTSIZE=200000
+HISTFILESIZE=200000

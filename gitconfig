@@ -17,3 +17,5 @@ ui = true
 
 [credential]
 helper = osxkeychain
+[safe]
+	directory = /Library/WebServer/Documents/flightsimflows
